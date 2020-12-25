@@ -2,6 +2,8 @@ import React from "react";
 import Buttons from "./Buttons";
 import Rowone from "./Rowone";
 import graph from "../../../assets/graphone.png";
+import wave from "../../../assets/awave.png";
+
 function Time(params) {
   return (
     <div className="hrowone">
@@ -16,7 +18,7 @@ function Time(params) {
 function Trading() {
   return (
     <div className="history">
-      <Rowone />
+      <Rowone mode={{ url: wave, text: "Trading History " }} />
       <Time />
       <div className="hrowtwo">
         <div className="Ttrade">Total Trade</div>

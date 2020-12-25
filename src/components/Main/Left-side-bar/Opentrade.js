@@ -1,9 +1,10 @@
 import React from "react";
 import Rowone from "./Rowone";
+import wave from "../../../assets/awave.png";
 function Opentrade() {
   return (
     <div className="opentrade">
-      <Rowone />
+      <Rowone mode={{ url: wave, text: "Open Trades " }} />
       <div className="Oprowtwo">
         <div className="inprogress">Trades in progress</div>
         <div className="outcome">Closest outcome</div>

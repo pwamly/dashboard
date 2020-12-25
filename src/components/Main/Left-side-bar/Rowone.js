@@ -1,13 +1,14 @@
 import React from "react";
-import wave from "../../../assets/awave.png";
 import greater from "../../../assets/greater.png";
-function Rowone() {
+
+function Rowone({ mode }) {
+  const { url, text } = mode;
   return (
     <div className="Oprowone">
       <div className="wave">
-        <img src={wave} alt="" className="wimg" />
+        <img src={url} alt="" className="wimg" />
       </div>
-      <div className="opentext">Open Trades</div>
+      <div className="opentext"> {text} </div>
       <div className="greater">
         <img src={greater} alt="" className="gimg" />
       </div>

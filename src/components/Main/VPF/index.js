@@ -1,5 +1,6 @@
 import React from "react";
 import Buttons from "../Left-side-bar/Buttons";
+import Card from "./Card";
 
 function Filter(params) {
   return (
@@ -12,29 +13,33 @@ function Filter(params) {
           <Buttons mode={{ text: "Filter" }} />
         </div>
       </div>
-
       <div className="units">
-        <div className="utext">Units:</div>
-        <div className="ubtn">
-          <Buttons mode={{ text: "%" }} />
-          <Buttons mode={{ text: "$" }} />
+        <div className="utext"> Units: </div>
+        <div className="fbtn">
+          <Buttons mode={{ text: "%" }} /> <Buttons mode={{ text: "$" }} />
         </div>
       </div>
       <div className="tranding">
-        <div className="trntext">Sort by</div>
+        <div className="trntext"> Sort by </div>
         <div className="select">
           <select name="" id="">
-            <option value="">Tranding</option>
+            <option value=""> Tranding </option>
           </select>
         </div>
       </div>
     </div>
   );
 }
+
 function index() {
   return (
     <div className="vpf">
       <Filter />
+      <div className="section-card">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }

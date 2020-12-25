@@ -170,6 +170,8 @@ img {
 .main {
     display: flex;
     flex-direction: row;
+    max-width: 1200px;
+    min-width: 1200px;
 }
 
 .sidebar {
@@ -189,7 +191,7 @@ img {
     min-height: fit-content;
     display: grid;
     white-space: nowrap;
-    margin-top: 20px;
+    margin-top: 10px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
@@ -495,26 +497,27 @@ img {
 
 .vpf {
     height: 170px;
-    width: 100%;
 }
 
 .filter {
-    width: 100%;
+    width: 1000px;
     height: auto;
     display: grid;
-    grid-template-columns: 60% 15% 25%;
-    min-width: fit-content;
+    grid-template-columns: 50% 20% 30%;
+    min-width: 1000px;
     margin-top: 40px;
 }
 
 .sfilter {
-    background: green;
+    /* background: green; */
+    background: none;
     display: flex;
     flex-direction: row;
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 12px;
+    padding-left: 40px;
 }
 
 .fbtn {
@@ -522,6 +525,7 @@ img {
     box-sizing: border-box;
     border-radius: 4px;
     background: none;
+    height: fit-content;
 }
 
 .stext {
@@ -530,24 +534,22 @@ img {
 }
 
 input {
-    border-radius: 0px !important;
     width: 200px;
-    background: none;
+    height: auto;
+    border: 0;
 }
 
 .units {
-    background: red;
+    background: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 10px;
 }
 
 .utext {
     background: none;
-}
-
-.ubtn {
-    background: none;
+    padding-top: 7px;
 }
 
 .tranding {
@@ -555,8 +557,9 @@ input {
     display: flex;
     /* justify-content: flex-end; */
     flex-direction: row;
-    background: grey;
+    background: none;
     gap: 12px;
+    width: 250px;
 }
 
 select {
@@ -566,4 +569,180 @@ select {
 
 .trntext {
     padding-top: 8px;
+}
+
+
+/*cards css*/
+
+.section-card {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.wrapper {
+    width: fit-content;
+    height: auto;
+    /* background: #1c9de8; */
+    background: none;
+    margin-top: 20px;
+}
+
+.cards {
+    width: 870px;
+    display: grid;
+    grid-template-columns: 0.8fr 0.6fr 0.5fr 0.6fr 0.6fr;
+    min-width: fit-content;
+    background: #272a2d;
+    padding: 15px;
+    gap: 2%;
+    margin-left: 3%;
+    border-radius: 10px;
+}
+
+.colone {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background: none;
+    /* background: red; */
+}
+
+.rowone {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 30px;
+}
+
+.ctext {
+    padding-top: 14px;
+    background: none;
+}
+
+.cimg {
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+.cstar {
+    height: 20px;
+    width: 20px;
+    background: none;
+}
+
+.rowtwo {
+    font-size: 12px;
+    padding-left: 30px;
+    background: none;
+}
+
+.c2text {
+    padding-top: 14px;
+    background: none;
+}
+
+.coltwo {
+    /* background: pink; */
+    background: none;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.c2rowone {
+    /* background: tomato; */
+    background: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.c2rowtwo {
+    font-size: 12px;
+    background: none;
+}
+
+.pegion {
+    height: 15px;
+    width: 25px;
+    padding-top: 12px;
+    background: none;
+}
+
+.c2img {
+    background: none;
+}
+
+.colthree {
+    background: none;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background: none;
+}
+
+.hgraph {
+    width: 150px;
+    background: none;
+}
+
+.c3img {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.c3img2 {
+    background: none;
+    background: none;
+}
+
+.colfour {
+    background: none;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.vimage {
+    height: 60px;
+    width: 60px;
+    border: none;
+    margin-top: 16px;
+}
+
+.colfive {
+    background: none;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 28px;
+}
+
+.c4rowone {
+    display: flex;
+    font-size: 20px;
+    background: none;
+    /* justify-content: flex-end; */
+}
+
+.c4rowtwo {
+    display: flex;
+    font-size: 12px;
+    background: none;
+    /* justify-content: flex-end; */
 }
